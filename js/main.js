@@ -1,14 +1,9 @@
 // ═══════════════════════════════════════════
-//  NAV scroll behavior
+//  NAV
 // ═══════════════════════════════════════════
 const navbar = document.getElementById('navbar');
-
 window.addEventListener('scroll', () => {
-  if (window.scrollY > 40) {
-    navbar.classList.add('scrolled');
-  } else {
-    navbar.classList.remove('scrolled');
-  }
+  navbar.classList.toggle('scrolled', window.scrollY > 20);
 }, { passive: true });
 
 // ═══════════════════════════════════════════
@@ -22,12 +17,11 @@ hamburger.addEventListener('click', () => {
   menuOpen = !menuOpen;
   mobileMenu.classList.toggle('open', menuOpen);
   document.body.style.overflow = menuOpen ? 'hidden' : '';
-
   const spans = hamburger.querySelectorAll('span');
   if (menuOpen) {
-    spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+    spans[0].style.transform = 'rotate(45deg) translate(4px, 4px)';
     spans[1].style.opacity = '0';
-    spans[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
+    spans[2].style.transform = 'rotate(-45deg) translate(4px, -4px)';
   } else {
     spans.forEach(s => { s.style.transform = ''; s.style.opacity = ''; });
   }
@@ -38,85 +32,130 @@ document.querySelectorAll('.mobile-link').forEach(link => {
     menuOpen = false;
     mobileMenu.classList.remove('open');
     document.body.style.overflow = '';
-    const spans = hamburger.querySelectorAll('span');
-    spans.forEach(s => { s.style.transform = ''; s.style.opacity = ''; });
+    hamburger.querySelectorAll('span').forEach(s => { s.style.transform = ''; s.style.opacity = ''; });
   });
 });
 
 // ═══════════════════════════════════════════
-//  Smooth scroll for all anchor links
+//  Boot sequence animation
 // ═══════════════════════════════════════════
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', (e) => {
-    const href = anchor.getAttribute('href');
-    if (href === '#') return;
-    const target = document.querySelector(href);
-    if (!target) return;
-    e.preventDefault();
-    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  });
+document.querySelectorAll('.boot-line').forEach(el => {
+  const delay = parseInt(el.dataset.delay || 0);
+  setTimeout(() => el.classList.add('visible'), delay);
 });
 
 // ═══════════════════════════════════════════
-//  Reveal on scroll (Intersection Observer)
+//  Typewriter in hero terminal
 // ═══════════════════════════════════════════
-const revealEls = document.querySelectorAll('.reveal');
+const typeTarget = document.getElementById('typewriter');
+const cursor = document.getElementById('cursor');
 
+const phrases = [
+  'cat README.md',
+  'git log --oneline',
+  'npm run build',
+  'python3 main.py',
+  'javac Main.java && java Main',
+  'ssh deploy@eemami.dev',
+];
+
+let phraseIdx = 0;
+let charIdx = 0;
+let deleting = false;
+let paused = false;
+
+function type() {
+  if (paused) return;
+
+  const current = phrases[phraseIdx];
+
+  if (!deleting) {
+    typeTarget.textContent = current.slice(0, charIdx + 1);
+    charIdx++;
+    if (charIdx === current.length) {
+      paused = true;
+      setTimeout(() => { paused = false; deleting = true; }, 2200);
+    }
+  } else {
+    typeTarget.textContent = current.slice(0, charIdx - 1);
+    charIdx--;
+    if (charIdx === 0) {
+      deleting = false;
+      phraseIdx = (phraseIdx + 1) % phrases.length;
+    }
+  }
+
+  const speed = deleting ? 40 : 85;
+  setTimeout(type, speed);
+}
+
+setTimeout(type, 1400);
+
+// ═══════════════════════════════════════════
+//  Reveal on scroll
+// ═══════════════════════════════════════════
 const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry, i) => {
+  entries.forEach(entry => {
     if (entry.isIntersecting) {
-      // Stagger within the same parent
-      const siblings = entry.target.parentElement.querySelectorAll('.reveal:not(.visible)');
-      let delay = 0;
-      siblings.forEach((sib, idx) => {
-        if (sib === entry.target) delay = idx * 80;
-      });
-      setTimeout(() => {
-        entry.target.classList.add('visible');
-      }, delay);
+      entry.target.classList.add('visible');
       observer.unobserve(entry.target);
     }
   });
-}, { threshold: 0.12 });
+}, { threshold: 0.1 });
 
-revealEls.forEach(el => observer.observe(el));
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
 // ═══════════════════════════════════════════
-//  Skill bars animate on scroll
+//  ASCII skill bars
 // ═══════════════════════════════════════════
+const TOTAL_BLOCKS = 12;
+
+const pcts = {
+  'TypeScript': 88,
+  'Java': 85,
+  'Python': 80,
+  'Obj-C++': 75,
+  'JavaScript': 85,
+};
+
+function buildBar(filled, total = TOTAL_BLOCKS) {
+  let out = '<span class="filled">';
+  for (let i = 0; i < filled; i++) out += '█';
+  out += '</span>';
+  for (let i = filled; i < total; i++) out += '░';
+  return out;
+}
+
 const skillObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      const fills = entry.target.querySelectorAll('.skill-fill');
-      fills.forEach(fill => {
-        fill.style.width = fill.style.getPropertyValue('--pct') || getComputedStyle(fill).getPropertyValue('--pct');
+      entry.target.querySelectorAll('.skill-line').forEach(line => {
+        const nameEl = line.querySelector('.sk-name');
+        const barEl = line.querySelector('.sk-bar');
+        if (!nameEl || !barEl) return;
+        const name = nameEl.textContent.trim();
+        const pct = pcts[name];
+        if (!pct) return;
+        const filled = Math.round((pct / 100) * TOTAL_BLOCKS);
+        setTimeout(() => {
+          barEl.innerHTML = buildBar(filled);
+        }, 300);
       });
       skillObserver.unobserve(entry.target);
     }
   });
 }, { threshold: 0.3 });
 
-document.querySelectorAll('.skill-group').forEach(el => skillObserver.observe(el));
+document.querySelectorAll('.skill-block').forEach(el => skillObserver.observe(el));
 
 // ═══════════════════════════════════════════
-//  Active nav link highlighting
+//  Smooth scroll
 // ═══════════════════════════════════════════
-const sections = document.querySelectorAll('section[id]');
-const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
-
-const sectionObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      navLinks.forEach(link => {
-        link.style.color = '';
-        if (link.getAttribute('href') === `#${entry.target.id}`) {
-          if (!link.classList.contains('btn-nav')) {
-            link.style.color = 'var(--accent-2)';
-          }
-        }
-      });
-    }
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', e => {
+    const target = document.querySelector(anchor.getAttribute('href'));
+    if (!target) return;
+    e.preventDefault();
+    target.scrollIntoView({ behavior: 'smooth' });
   });
-}, { rootMargin: '-40% 0px -50% 0px' });
-
-sections.forEach(section => sectionObserver.observe(section));
+});

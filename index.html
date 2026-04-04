@@ -4,26 +4,29 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Elyas Emami — Software Engineer</title>
-  <meta name="description" content="Software Engineer specializing in TypeScript, Java, Python, and Objective-C++. Building cutting-edge applications." />
+  <meta name="description" content="Software Engineer. TypeScript, Java, Python, Objective-C++. San Diego, CA." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
+  <!-- SCANLINES overlay -->
+  <div class="scanlines" aria-hidden="true"></div>
+
   <!-- NAV -->
   <nav id="navbar">
     <div class="nav-inner">
-      <a href="#hero" class="nav-logo">ee<span>.</span></a>
+      <span class="nav-logo"><span class="prompt">~/</span>eemami.dev</span>
       <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#contact" class="btn-nav">Contact</a></li>
+        <li><a href="#about"><span class="dim">cd</span> about</a></li>
+        <li><a href="#projects"><span class="dim">ls</span> projects</a></li>
+        <li><a href="#skills"><span class="dim">cat</span> skills</a></li>
+        <li><a href="#education"><span class="dim">cat</span> education</a></li>
+        <li><a href="#contact"><span class="dim">./</span>contact</a></li>
       </ul>
-      <button class="hamburger" id="hamburger" aria-label="Menu">
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -32,90 +35,125 @@
   <!-- MOBILE MENU -->
   <div class="mobile-menu" id="mobileMenu">
     <ul>
-      <li><a href="#about" class="mobile-link">About</a></li>
-      <li><a href="#projects" class="mobile-link">Projects</a></li>
-      <li><a href="#skills" class="mobile-link">Skills</a></li>
-      <li><a href="#education" class="mobile-link">Education</a></li>
-      <li><a href="#contact" class="mobile-link">Contact</a></li>
+      <li><a href="#about" class="mobile-link">~/about</a></li>
+      <li><a href="#projects" class="mobile-link">~/projects</a></li>
+      <li><a href="#skills" class="mobile-link">~/skills</a></li>
+      <li><a href="#education" class="mobile-link">~/education</a></li>
+      <li><a href="#contact" class="mobile-link">~/contact</a></li>
     </ul>
   </div>
 
   <!-- HERO -->
   <section id="hero">
-    <div class="hero-bg">
-      <div class="hero-grid"></div>
-      <div class="hero-glow glow-1"></div>
-      <div class="hero-glow glow-2"></div>
-    </div>
-    <div class="hero-content">
-      <div class="hero-badge reveal">Available for hire</div>
-      <h1 class="hero-name reveal">
-        Elyas<br /><span class="accent">Emami</span>
-      </h1>
-      <p class="hero-title reveal">Software Engineer</p>
-      <p class="hero-sub reveal">
-        Building production-grade applications across full-stack, systems, and mobile.<br />
-        Depth-first thinker. Clean code. Real outcomes.
-      </p>
-      <div class="hero-cta reveal">
-        <a href="#projects" class="btn-primary">View My Work</a>
-        <a href="#contact" class="btn-ghost">Get In Touch</a>
+    <div class="hero-inner">
+      <div class="terminal-window">
+        <div class="term-titlebar">
+          <div class="term-dots">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <span class="term-title">elyas@eemami.dev — bash</span>
+        </div>
+        <div class="term-body">
+          <div class="term-line boot-line" data-delay="0">
+            <span class="dim">Last login: Fri Apr  3 12:00:00 on ttys001</span>
+          </div>
+          <div class="term-line boot-line" data-delay="200">
+            <span class="prompt-full">elyas@eemami.dev</span><span class="prompt-sep">:</span><span class="prompt-dir">~</span><span class="prompt-sym">$</span> <span class="cmd">neofetch</span>
+          </div>
+
+          <div class="neofetch boot-line" data-delay="600">
+            <div class="nf-left">
+              <pre class="ascii-art">
+ ███████╗███████╗
+ ██╔════╝██╔════╝
+ █████╗  █████╗
+ ██╔══╝  ██╔══╝
+ ███████╗███████╗
+ ╚══════╝╚══════╝</pre>
+            </div>
+            <div class="nf-right">
+              <div class="nf-name"><span class="nf-user">elyas</span><span class="nf-at">@</span><span class="nf-host">eemami.dev</span></div>
+              <div class="nf-sep">─────────────────────</div>
+              <div class="nf-row"><span class="nf-key">OS</span><span class="nf-val">San Diego, CA</span></div>
+              <div class="nf-row"><span class="nf-key">Role</span><span class="nf-val">Software Engineer</span></div>
+              <div class="nf-row"><span class="nf-key">Shell</span><span class="nf-val">bash / zsh</span></div>
+              <div class="nf-row"><span class="nf-key">Stack</span><span class="nf-val">TypeScript · Java · Python · ObjC++</span></div>
+              <div class="nf-row"><span class="nf-key">Editor</span><span class="nf-val">VS Code · Xcode · IntelliJ</span></div>
+              <div class="nf-row"><span class="nf-key">GitHub</span><span class="nf-val"><a href="https://github.com/elyasemami" target="_blank" rel="noopener">github.com/elyasemami</a></span></div>
+              <div class="nf-row"><span class="nf-key">Status</span><span class="nf-val status-available">● available for hire</span></div>
+              <div class="nf-sep">─────────────────────</div>
+              <div class="nf-colors">
+                <span class="c c1"></span><span class="c c2"></span><span class="c c3"></span>
+                <span class="c c4"></span><span class="c c5"></span><span class="c c6"></span>
+                <span class="c c7"></span><span class="c c8"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="term-line boot-line" data-delay="900">
+            <span class="prompt-full">elyas@eemami.dev</span><span class="prompt-sep">:</span><span class="prompt-dir">~</span><span class="prompt-sym">$</span> <span id="typewriter"></span><span class="cursor" id="cursor">█</span>
+          </div>
+        </div>
       </div>
-      <div class="hero-links reveal">
-        <a href="https://github.com/elyasemami" target="_blank" rel="noopener" aria-label="GitHub">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
-        </a>
-        <a href="mailto:placeholder@email.com" aria-label="Email">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-        </a>
-        <a href="https://linkedin.com/in/elyasemami" target="_blank" rel="noopener" aria-label="LinkedIn">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-        </a>
+      <div class="hero-links">
+        <a href="https://github.com/elyasemami" target="_blank" rel="noopener">[ github ]</a>
+        <a href="https://linkedin.com/in/elyasemami" target="_blank" rel="noopener">[ linkedin ]</a>
+        <a href="mailto:placeholder@email.com">[ email ]</a>
+        <a href="#projects">[ projects ]</a>
       </div>
-    </div>
-    <div class="scroll-indicator">
-      <span>scroll</span>
-      <div class="scroll-line"></div>
     </div>
   </section>
 
   <!-- ABOUT -->
   <section id="about">
     <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">01 — About</span>
-        <h2>Who I Am</h2>
+      <div class="section-label reveal">
+        <span class="prompt-full">elyas@eemami.dev</span><span class="prompt-sep">:</span><span class="prompt-dir">~</span><span class="prompt-sym">$</span> cat about.txt
       </div>
-      <div class="about-grid">
-        <div class="about-text reveal">
-          <p>
-            I'm a software engineer based in <strong>San Diego, CA</strong> with a passion for building systems that scale — from low-level native applications to full-stack web platforms.
-          </p>
-          <p>
-            My approach is depth-first: I don't stop at "it works." I care about <em>why</em> it works, how it fails, and how to make it better. That mindset drives everything I build.
-          </p>
-          <p>
-            I thrive at the intersection of engineering and entrepreneurship — thinking beyond the code to the product, the user, and the outcome.
-          </p>
-          <a href="#contact" class="btn-primary">Let's Talk</a>
+
+      <div class="about-block reveal">
+        <div class="file-header">
+          <span class="file-name">about.txt</span>
+          <span class="file-meta">482 bytes · UTF-8</span>
         </div>
-        <div class="about-stats reveal">
-          <div class="stat-card">
-            <div class="stat-num">6+</div>
-            <div class="stat-label">GitHub Repositories</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-num">4</div>
-            <div class="stat-label">Languages</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-num">SD</div>
-            <div class="stat-label">Based in San Diego</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-num">∞</div>
-            <div class="stat-label">Curiosity</div>
-          </div>
+        <div class="file-content">
+          <p>
+            Software engineer based in <span class="hl">San Diego, CA</span>. I build things that work —
+            from native macOS applications in Objective-C++ to full-stack web platforms in TypeScript.
+          </p>
+          <p>
+            I think depth-first. "It works" is the floor, not the ceiling. I care about
+            <span class="hl-green">why</span> it works, how it breaks under load, and how to make it
+            genuinely better. That mindset carries into everything I ship.
+          </p>
+          <p>
+            Entrepreneur at heart. I see past the code to the product, the user, the outcome.
+            Built for complexity. Drawn to hard problems.
+          </p>
+        </div>
+      </div>
+
+      <div class="stat-row reveal">
+        <div class="stat-item">
+          <span class="stat-val">6+</span>
+          <span class="stat-key">repos</span>
+        </div>
+        <span class="stat-div">|</span>
+        <div class="stat-item">
+          <span class="stat-val">4</span>
+          <span class="stat-key">languages</span>
+        </div>
+        <span class="stat-div">|</span>
+        <div class="stat-item">
+          <span class="stat-val">SD</span>
+          <span class="stat-key">location</span>
+        </div>
+        <span class="stat-div">|</span>
+        <div class="stat-item">
+          <span class="stat-val green">OPEN</span>
+          <span class="stat-key">to work</span>
         </div>
       </div>
     </div>
@@ -124,78 +162,58 @@
   <!-- PROJECTS -->
   <section id="projects">
     <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">02 — Projects</span>
-        <h2>What I've Built</h2>
-      </div>
-      <div class="projects-grid">
-
-        <div class="project-card featured reveal">
-          <div class="project-card-inner">
-            <div class="project-top">
-              <div class="project-icon">📝</div>
-              <div class="project-links">
-                <a href="https://github.com/elyasemami/notepadmacOS" target="_blank" rel="noopener" aria-label="GitHub repo">
-                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
-                </a>
-              </div>
-            </div>
-            <h3>notepadmacOS</h3>
-            <p>A native macOS notepad application with a nostalgic Windows XP aesthetic — bridging classic UI design with modern macOS development. Built entirely in Objective-C++.</p>
-            <div class="project-tags">
-              <span>Objective-C++</span>
-              <span>macOS</span>
-              <span>Native</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-card reveal">
-          <div class="project-card-inner">
-            <div class="project-top">
-              <div class="project-icon">💬</div>
-              <div class="project-links">
-                <a href="https://github.com/elyasemami/chat-server-pro" target="_blank" rel="noopener" aria-label="GitHub repo">
-                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
-                </a>
-              </div>
-            </div>
-            <h3>Chat Server Pro</h3>
-            <p>A robust multi-client chat server implementation in Java. Handles concurrent connections, message routing, and real-time communication over TCP/IP sockets.</p>
-            <div class="project-tags">
-              <span>Java</span>
-              <span>Networking</span>
-              <span>Concurrency</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-card reveal">
-          <div class="project-card-inner">
-            <div class="project-top">
-              <div class="project-icon">⚡</div>
-              <div class="project-links">
-                <a href="https://github.com/elyasemami/110-lab0" target="_blank" rel="noopener" aria-label="GitHub repo">
-                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
-                </a>
-              </div>
-            </div>
-            <h3>TypeScript Lab</h3>
-            <p>TypeScript-based project demonstrating type-safe application development patterns, modern ES features, and scalable code architecture principles.</p>
-            <div class="project-tags">
-              <span>TypeScript</span>
-              <span>Node.js</span>
-            </div>
-          </div>
-        </div>
-
+      <div class="section-label reveal">
+        <span class="prompt-full">elyas@eemami.dev</span><span class="prompt-sep">:</span><span class="prompt-dir">~/projects</span><span class="prompt-sym">$</span> ls -la
       </div>
 
-      <div class="projects-more reveal">
-        <a href="https://github.com/elyasemami" target="_blank" rel="noopener" class="btn-ghost">
-          View All on GitHub
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      <div class="ls-output reveal">
+        <div class="ls-header">
+          <span>total 3</span>
+        </div>
+
+        <!-- notepadmacOS -->
+        <a href="https://github.com/elyasemami/notepadmacOS" target="_blank" rel="noopener" class="ls-entry">
+          <span class="ls-perms">drwxr-xr-x</span>
+          <span class="ls-date">Apr  3</span>
+          <span class="ls-name dir">notepadmacOS/</span>
+          <span class="ls-desc">Native macOS notepad — Windows XP UI on modern macOS. Objective-C++.</span>
+          <div class="ls-tags">
+            <span>Objective-C++</span>
+            <span>macOS</span>
+            <span>Native</span>
+          </div>
         </a>
+
+        <!-- chat-server-pro -->
+        <a href="https://github.com/elyasemami/chat-server-pro" target="_blank" rel="noopener" class="ls-entry">
+          <span class="ls-perms">drwxr-xr-x</span>
+          <span class="ls-date">Mar 12</span>
+          <span class="ls-name dir">chat-server-pro/</span>
+          <span class="ls-desc">Multi-client TCP chat server. Concurrent connections, real-time messaging. Java.</span>
+          <div class="ls-tags">
+            <span>Java</span>
+            <span>TCP/IP</span>
+            <span>Concurrency</span>
+          </div>
+        </a>
+
+        <!-- 110-lab0 -->
+        <a href="https://github.com/elyasemami/110-lab0" target="_blank" rel="noopener" class="ls-entry">
+          <span class="ls-perms">drwxr-xr-x</span>
+          <span class="ls-date">Feb 28</span>
+          <span class="ls-name dir">110-lab0/</span>
+          <span class="ls-desc">Type-safe TypeScript project. Modern ES patterns, scalable architecture.</span>
+          <div class="ls-tags">
+            <span>TypeScript</span>
+            <span>Node.js</span>
+          </div>
+        </a>
+
+      </div>
+
+      <div class="ls-footer reveal">
+        <span class="prompt-full">elyas@eemami.dev</span><span class="prompt-sep">:</span><span class="prompt-dir">~/projects</span><span class="prompt-sym">$</span>
+        <a href="https://github.com/elyasemami" target="_blank" rel="noopener" class="inline-link">→ view all on github</a>
       </div>
     </div>
   </section>
@@ -203,74 +221,65 @@
   <!-- SKILLS -->
   <section id="skills">
     <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">03 — Skills</span>
-        <h2>Tech Stack</h2>
+      <div class="section-label reveal">
+        <span class="prompt-full">elyas@eemami.dev</span><span class="prompt-sep">:</span><span class="prompt-dir">~</span><span class="prompt-sym">$</span> cat skills.json | jq
       </div>
-      <div class="skills-grid">
 
-        <div class="skill-group reveal">
-          <h3>Languages</h3>
-          <div class="skill-list">
-            <div class="skill-item">
-              <span class="skill-name">TypeScript</span>
-              <div class="skill-bar"><div class="skill-fill" style="--pct: 88%"></div></div>
+      <div class="skills-grid reveal">
+        <div class="skills-col">
+          <div class="skill-block">
+            <div class="skill-block-title">// languages</div>
+            <div class="skill-line">
+              <span class="sk-name">TypeScript</span>
+              <span class="sk-bar" data-fill="11">░░░░░░░░░░░░</span>
+              <span class="sk-pct">88%</span>
             </div>
-            <div class="skill-item">
-              <span class="skill-name">Java</span>
-              <div class="skill-bar"><div class="skill-fill" style="--pct: 85%"></div></div>
+            <div class="skill-line">
+              <span class="sk-name">Java</span>
+              <span class="sk-bar" data-fill="11">░░░░░░░░░░░░</span>
+              <span class="sk-pct">85%</span>
             </div>
-            <div class="skill-item">
-              <span class="skill-name">Python</span>
-              <div class="skill-bar"><div class="skill-fill" style="--pct: 80%"></div></div>
+            <div class="skill-line">
+              <span class="sk-name">Python</span>
+              <span class="sk-bar" data-fill="10">░░░░░░░░░░░░</span>
+              <span class="sk-pct">80%</span>
             </div>
-            <div class="skill-item">
-              <span class="skill-name">Objective-C++</span>
-              <div class="skill-bar"><div class="skill-fill" style="--pct: 75%"></div></div>
+            <div class="skill-line">
+              <span class="sk-name">Obj-C++</span>
+              <span class="sk-bar" data-fill="9">░░░░░░░░░░░░</span>
+              <span class="sk-pct">75%</span>
             </div>
-            <div class="skill-item">
-              <span class="skill-name">JavaScript</span>
-              <div class="skill-bar"><div class="skill-fill" style="--pct: 85%"></div></div>
+            <div class="skill-line">
+              <span class="sk-name">JavaScript</span>
+              <span class="sk-bar" data-fill="11">░░░░░░░░░░░░</span>
+              <span class="sk-pct">85%</span>
             </div>
           </div>
         </div>
 
-        <div class="skill-group reveal">
-          <h3>Frontend</h3>
-          <div class="skill-tags">
-            <span>React</span>
-            <span>HTML5</span>
-            <span>CSS3</span>
-            <span>TypeScript</span>
-            <span>Next.js</span>
-            <span>Tailwind</span>
+        <div class="skills-col">
+          <div class="skill-block">
+            <div class="skill-block-title">// frontend</div>
+            <div class="skill-tags-list">
+              <span>React</span><span>Next.js</span><span>HTML5</span>
+              <span>CSS3</span><span>Tailwind</span><span>TypeScript</span>
+            </div>
+          </div>
+          <div class="skill-block">
+            <div class="skill-block-title">// backend & systems</div>
+            <div class="skill-tags-list">
+              <span>Node.js</span><span>REST APIs</span><span>Java Sockets</span>
+              <span>macOS SDK</span><span>SQL</span><span>Linux</span>
+            </div>
+          </div>
+          <div class="skill-block">
+            <div class="skill-block-title">// tooling</div>
+            <div class="skill-tags-list">
+              <span>Git</span><span>GitHub</span><span>Xcode</span>
+              <span>IntelliJ</span><span>VS Code</span><span>Terminal</span>
+            </div>
           </div>
         </div>
-
-        <div class="skill-group reveal">
-          <h3>Backend & Systems</h3>
-          <div class="skill-tags">
-            <span>Node.js</span>
-            <span>Java Sockets</span>
-            <span>REST APIs</span>
-            <span>SQL</span>
-            <span>macOS SDK</span>
-            <span>Linux</span>
-          </div>
-        </div>
-
-        <div class="skill-group reveal">
-          <h3>Tools</h3>
-          <div class="skill-tags">
-            <span>Git</span>
-            <span>GitHub</span>
-            <span>VS Code</span>
-            <span>Xcode</span>
-            <span>IntelliJ</span>
-            <span>Terminal</span>
-          </div>
-        </div>
-
       </div>
     </div>
   </section>
@@ -278,31 +287,21 @@
   <!-- EDUCATION -->
   <section id="education">
     <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">04 — Education</span>
-        <h2>Background</h2>
+      <div class="section-label reveal">
+        <span class="prompt-full">elyas@eemami.dev</span><span class="prompt-sep">:</span><span class="prompt-dir">~</span><span class="prompt-sym">$</span> cat education.md
       </div>
-      <div class="education-list">
 
-        <div class="edu-card reveal">
-          <div class="edu-icon">🎓</div>
-          <div class="edu-content">
-            <div class="edu-meta">
-              <span class="edu-tag">Computer Science</span>
-            </div>
-            <h3>University of California, San Diego</h3>
-            <p class="edu-sub">UCSD — San Diego, CA</p>
-            <p class="edu-desc">
-              Coursework in software engineering, data structures, systems programming, and full-stack development. Strong foundation in both theory and applied engineering.
-            </p>
-            <div class="edu-courses">
-              <span>CSE 15L</span>
-              <span>Software Tools & Techniques</span>
-              <span>Systems Programming</span>
-            </div>
-          </div>
+      <div class="edu-block reveal">
+        <div class="edu-header">
+          <span class="edu-marker">#</span>
+          <span class="edu-school">University of California, San Diego</span>
         </div>
-
+        <div class="edu-body">
+          <div class="edu-row"><span class="edu-key">Degree</span><span class="edu-val">Computer Science</span></div>
+          <div class="edu-row"><span class="edu-key">Location</span><span class="edu-val">San Diego, CA</span></div>
+          <div class="edu-row"><span class="edu-key">Coursework</span><span class="edu-val">Software Tools &amp; Techniques · Systems Programming · Data Structures · Full-Stack Dev</span></div>
+          <div class="edu-row"><span class="edu-key">Courses</span><span class="edu-val"><span class="mono-tag">CSE 15L</span> <span class="mono-tag">CSE 110</span></span></div>
+        </div>
       </div>
     </div>
   </section>
@@ -310,57 +309,48 @@
   <!-- CONTACT -->
   <section id="contact">
     <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">05 — Contact</span>
-        <h2>Let's Work Together</h2>
+      <div class="section-label reveal">
+        <span class="prompt-full">elyas@eemami.dev</span><span class="prompt-sep">:</span><span class="prompt-dir">~</span><span class="prompt-sym">$</span> ./contact.sh
       </div>
-      <div class="contact-grid">
-        <div class="contact-text reveal">
-          <p>
-            I'm actively looking for software engineering roles in <strong>San Diego, CA</strong>. If you're building something interesting and need someone who brings both technical depth and entrepreneurial thinking — let's talk.
-          </p>
-          <p>
-            Open to full-time positions, contracts, and interesting collaborations.
-          </p>
+
+      <div class="contact-block reveal">
+        <div class="contact-text">
+          <div class="contact-line"><span class="dim">#</span> open to full-time roles in San Diego, CA</div>
+          <div class="contact-line"><span class="dim">#</span> also open to contracts and interesting collabs</div>
+          <div class="contact-line"><span class="dim">#</span> if you're building something real — let's talk</div>
         </div>
-        <div class="contact-links reveal">
-          <a href="mailto:placeholder@email.com" class="contact-card">
-            <div class="contact-card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            </div>
-            <div>
-              <div class="contact-label">Email</div>
-              <div class="contact-val">placeholder@email.com</div>
-            </div>
+
+        <div class="contact-links-block">
+          <a href="mailto:placeholder@email.com" class="contact-entry">
+            <span class="ce-icon">✉</span>
+            <span class="ce-label">email</span>
+            <span class="ce-val">placeholder@email.com</span>
+            <span class="ce-arrow">→</span>
           </a>
-          <a href="https://github.com/elyasemami" target="_blank" rel="noopener" class="contact-card">
-            <div class="contact-card-icon">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
-            </div>
-            <div>
-              <div class="contact-label">GitHub</div>
-              <div class="contact-val">elyasemami</div>
-            </div>
+          <a href="https://github.com/elyasemami" target="_blank" rel="noopener" class="contact-entry">
+            <span class="ce-icon">⌥</span>
+            <span class="ce-label">github</span>
+            <span class="ce-val">github.com/elyasemami</span>
+            <span class="ce-arrow">→</span>
           </a>
-          <a href="https://linkedin.com/in/elyasemami" target="_blank" rel="noopener" class="contact-card">
-            <div class="contact-card-icon">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-            </div>
-            <div>
-              <div class="contact-label">LinkedIn</div>
-              <div class="contact-val">elyasemami</div>
-            </div>
+          <a href="https://linkedin.com/in/elyasemami" target="_blank" rel="noopener" class="contact-entry">
+            <span class="ce-icon">◈</span>
+            <span class="ce-label">linkedin</span>
+            <span class="ce-val">linkedin.com/in/elyasemami</span>
+            <span class="ce-arrow">→</span>
           </a>
-          <div class="contact-card location-card">
-            <div class="contact-card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            </div>
-            <div>
-              <div class="contact-label">Location</div>
-              <div class="contact-val">San Diego, CA</div>
-            </div>
+          <div class="contact-entry no-link">
+            <span class="ce-icon">◉</span>
+            <span class="ce-label">location</span>
+            <span class="ce-val">San Diego, CA · PDT (UTC-7)</span>
+            <span class="ce-arrow"></span>
           </div>
         </div>
+      </div>
+
+      <div class="contact-prompt reveal">
+        <span class="prompt-full">elyas@eemami.dev</span><span class="prompt-sep">:</span><span class="prompt-dir">~</span><span class="prompt-sym">$</span>
+        <span class="cursor-sm">█</span>
       </div>
     </div>
   </section>
@@ -369,11 +359,11 @@
   <footer>
     <div class="container">
       <div class="footer-inner">
-        <span class="footer-logo">ee<span class="accent">.</span></span>
-        <p>© 2026 Elyas Emami. All rights reserved.</p>
+        <span class="footer-copy">© 2026 Elyas Emami</span>
+        <span class="footer-mid">built with intent, not a template</span>
         <div class="footer-links">
-          <a href="https://github.com/elyasemami" target="_blank" rel="noopener">GitHub</a>
-          <a href="https://linkedin.com/in/elyasemami" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/elyasemami" target="_blank" rel="noopener">github</a>
+          <a href="https://linkedin.com/in/elyasemami" target="_blank" rel="noopener">linkedin</a>
         </div>
       </div>
     </div>
