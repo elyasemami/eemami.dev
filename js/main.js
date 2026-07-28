@@ -37,62 +37,6 @@ document.querySelectorAll('.mobile-link').forEach(link => {
 });
 
 // ═══════════════════════════════════════════
-//  Boot sequence animation
-// ═══════════════════════════════════════════
-document.querySelectorAll('.boot-line').forEach(el => {
-  const delay = parseInt(el.dataset.delay || 0);
-  setTimeout(() => el.classList.add('visible'), delay);
-});
-
-// ═══════════════════════════════════════════
-//  Typewriter in hero terminal
-// ═══════════════════════════════════════════
-const typeTarget = document.getElementById('typewriter');
-const cursor = document.getElementById('cursor');
-
-const phrases = [
-  'cat README.md',
-  'git log --oneline',
-  'npm run build',
-  'python3 main.py',
-  'javac Main.java && java Main',
-  'ssh deploy@eemami.dev',
-  'open https://atozflow.com',
-];
-
-let phraseIdx = 0;
-let charIdx = 0;
-let deleting = false;
-let paused = false;
-
-function type() {
-  if (paused) return;
-
-  const current = phrases[phraseIdx];
-
-  if (!deleting) {
-    typeTarget.textContent = current.slice(0, charIdx + 1);
-    charIdx++;
-    if (charIdx === current.length) {
-      paused = true;
-      setTimeout(() => { paused = false; deleting = true; }, 2200);
-    }
-  } else {
-    typeTarget.textContent = current.slice(0, charIdx - 1);
-    charIdx--;
-    if (charIdx === 0) {
-      deleting = false;
-      phraseIdx = (phraseIdx + 1) % phrases.length;
-    }
-  }
-
-  const speed = deleting ? 40 : 85;
-  setTimeout(type, speed);
-}
-
-setTimeout(type, 1400);
-
-// ═══════════════════════════════════════════
 //  Reveal on scroll
 // ═══════════════════════════════════════════
 const observer = new IntersectionObserver((entries) => {
@@ -105,49 +49,6 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.1 });
 
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
-// ═══════════════════════════════════════════
-//  ASCII skill bars
-// ═══════════════════════════════════════════
-const TOTAL_BLOCKS = 12;
-
-const pcts = {
-  'TypeScript': 88,
-  'Java': 85,
-  'Python': 80,
-  'Obj-C++': 75,
-  'JavaScript': 85,
-};
-
-function buildBar(filled, total = TOTAL_BLOCKS) {
-  let out = '<span class="filled">';
-  for (let i = 0; i < filled; i++) out += '█';
-  out += '</span>';
-  for (let i = filled; i < total; i++) out += '░';
-  return out;
-}
-
-const skillObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.querySelectorAll('.skill-line').forEach(line => {
-        const nameEl = line.querySelector('.sk-name');
-        const barEl = line.querySelector('.sk-bar');
-        if (!nameEl || !barEl) return;
-        const name = nameEl.textContent.trim();
-        const pct = pcts[name];
-        if (!pct) return;
-        const filled = Math.round((pct / 100) * TOTAL_BLOCKS);
-        setTimeout(() => {
-          barEl.innerHTML = buildBar(filled);
-        }, 300);
-      });
-      skillObserver.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.3 });
-
-document.querySelectorAll('.skill-block').forEach(el => skillObserver.observe(el));
 
 // ═══════════════════════════════════════════
 //  Smooth scroll

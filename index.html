@@ -7,26 +7,23 @@
   <meta name="description" content="Software Engineer & Entrepreneur building intelligent systems with Python, FastAPI & LLMs — and AtoZFlow, an automation platform for small businesses. UCSD grad. San Diego, CA." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-  <!-- SCANLINES overlay -->
-  <div class="scanlines" aria-hidden="true"></div>
-
   <!-- NAV -->
   <nav id="navbar">
     <div class="nav-inner">
-      <span class="nav-logo"><span class="prompt">~/</span>eemami.dev</span>
+      <a href="#hero" class="nav-logo">Elyas Emami</a>
       <ul class="nav-links">
-        <li><a href="#about"><span class="dim">cd</span> about</a></li>
-        <li><a href="#projects"><span class="dim">ls</span> projects</a></li>
-        <li><a href="#ventures"><span class="dim">exec</span> ventures</a></li>
-        <li><a href="#skills"><span class="dim">cat</span> skills</a></li>
-        <li><a href="#education"><span class="dim">cat</span> education</a></li>
-        <li><a href="#contact"><span class="dim">./</span>contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#ventures">Ventures</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
       </ul>
+      <a href="#contact" class="nav-cta">Get in touch</a>
       <button class="hamburger" id="hamburger" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
@@ -36,83 +33,38 @@
   <!-- MOBILE MENU -->
   <div class="mobile-menu" id="mobileMenu">
     <ul>
-      <li><a href="#about" class="mobile-link">~/about</a></li>
-      <li><a href="#projects" class="mobile-link">~/projects</a></li>
-      <li><a href="#ventures" class="mobile-link">~/ventures</a></li>
-      <li><a href="#skills" class="mobile-link">~/skills</a></li>
-      <li><a href="#education" class="mobile-link">~/education</a></li>
-      <li><a href="#contact" class="mobile-link">~/contact</a></li>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#ventures" class="mobile-link">Ventures</a></li>
+      <li><a href="#projects" class="mobile-link">Projects</a></li>
+      <li><a href="#skills" class="mobile-link">Skills</a></li>
+      <li><a href="#education" class="mobile-link">Education</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
     </ul>
   </div>
 
   <!-- HERO -->
   <section id="hero">
-    <div class="hero-inner">
-      <div class="terminal-window">
-        <div class="term-titlebar">
-          <div class="term-dots">
-            <span class="dot red"></span>
-            <span class="dot yellow"></span>
-            <span class="dot green"></span>
-          </div>
-          <span class="term-title">elyas@eemami.dev — bash</span>
-        </div>
-        <div class="term-body">
-          <div class="term-line boot-line" data-delay="0">
-            <span class="dim">Last login: Fri Apr  3 12:00:00 on ttys001</span>
-          </div>
-          <div class="term-line boot-line" data-delay="200">
-            <span class="prompt-full">elyas@eemami.dev</span><span class="prompt-sep">:</span><span class="prompt-dir">~</span><span class="prompt-sym">$</span> <span class="cmd">fastfetch</span>
-          </div>
-
-          <div class="fastfetch boot-line" data-delay="600">
-            <div class="ff-left">
-              <pre class="ff-ascii">        ██████
-      ██░░░░░░██
-    ██░░░░░░░░░░██
-   █░░░░░░░░░░░░░█
-  █░░░░░░█████░░░░█
-  █░░░░███░░░███░░█
- █░░░░█░░░░░░░█░░░█
- █░░░░█░░░░░░░█░░░█
- █░░░░░░███████░░░█
- █░░░░░░░░░░░░░░░░█
-  █░░░██░░░░░██░░█
-  █░░░░░█████░░░░█
-   █░░░░░░░░░░░░█
-    ██░░░░░░░░██
-      ██████████</pre>
-            </div>
-            <div class="ff-right">
-              <div class="ff-title"><span class="ff-user">elyas</span><span class="ff-at">@</span><span class="ff-host">eemami.dev</span></div>
-              <div class="ff-underline">─────────────────────────</div>
-              <div class="ff-row"><span class="ff-key">Education</span><span class="ff-sep2">:</span><span class="ff-val">University of California, San Diego</span></div>
-              <div class="ff-row"><span class="ff-key">Role</span><span class="ff-sep2">:</span><span class="ff-val">Founder · Software Engineer</span></div>
-              <div class="ff-row"><span class="ff-key">Building</span><span class="ff-sep2">:</span><span class="ff-val"><a href="https://atozflow.com" target="_blank" rel="noopener">atozflow.com</a></span></div>
-              <div class="ff-row"><span class="ff-key">Languages</span><span class="ff-sep2">:</span><span class="ff-val">Python · TypeScript · Java</span></div>
-              <div class="ff-row"><span class="ff-key">GitHub</span><span class="ff-sep2">:</span><span class="ff-val"><a href="https://github.com/elyasemami" target="_blank" rel="noopener">github.com/elyasemami</a></span></div>
-              <div class="ff-row"><span class="ff-key">Status</span><span class="ff-sep2">:</span><span class="ff-val ff-open">● building AtoZFlow · open to opportunities</span></div>
-              <div class="ff-underline" style="margin-top:6px">─────────────────────────</div>
-              <div class="ff-palette">
-                <span class="fp fp1">███</span><span class="fp fp2">███</span><span class="fp fp3">███</span><span class="fp fp4">███</span><span class="fp fp5">███</span><span class="fp fp6">███</span><span class="fp fp7">███</span><span class="fp fp8">███</span>
-              </div>
-              <div class="ff-palette" style="margin-top:2px">
-                <span class="fp fp9">███</span><span class="fp fp10">███</span><span class="fp fp11">███</span><span class="fp fp12">███</span><span class="fp fp13">███</span><span class="fp fp14">███</span><span class="fp fp15">███</span><span class="fp fp16">███</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="term-line boot-line" data-delay="900">
-            <span class="prompt-full">elyas@eemami.dev</span><span class="prompt-sep">:</span><span class="prompt-dir">~</span><span class="prompt-sym">$</span> <span id="typewriter"></span><span class="cursor" id="cursor">█</span>
-          </div>
-        </div>
+    <div class="container hero-inner">
+      <p class="eyebrow reveal">Software Engineer &amp; Entrepreneur</p>
+      <h1 class="hero-title reveal">Elyas Emami</h1>
+      <p class="hero-desc reveal">
+        I build things that work — full-stack platforms in Python and TypeScript, agentic AI systems
+        powered by LLMs, and AtoZFlow, a company helping small businesses run leaner and stay reachable
+        to their customers around the clock.
+      </p>
+      <div class="hero-meta reveal">
+        <span class="status-pill"><span class="status-dot"></span>Building AtoZFlow · Open to opportunities</span>
+        <span class="hero-meta-item">San Diego, CA</span>
+        <span class="hero-meta-item">UCSD — Math &amp; CS</span>
       </div>
-      <div class="hero-links">
-        <a href="https://github.com/elyasemami" target="_blank" rel="noopener">[ github ]</a>
-        <a href="https://linkedin.com/in/elyasemami" target="_blank" rel="noopener">[ linkedin ]</a>
-        <a href="mailto:elyas@eemami.dev">[ email ]</a>
-        <a href="#ventures">[ ventures ]</a>
-        <a href="#projects">[ projects ]</a>
+      <div class="hero-actions reveal">
+        <a href="#ventures" class="btn btn-primary">View my work</a>
+        <a href="#contact" class="btn btn-secondary">Get in touch</a>
+      </div>
+      <div class="hero-links reveal">
+        <a href="https://github.com/elyasemami" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/elyasemami" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:elyas@eemami.dev">Email</a>
       </div>
     </div>
   </section>
@@ -120,33 +72,59 @@
   <!-- ABOUT -->
   <section id="about">
     <div class="container">
-      <div class="section-label reveal">
-        <span class="prompt-full">elyas@eemami.dev</span><span class="prompt-sep">:</span><span class="prompt-dir">~</span><span class="prompt-sym">$</span> cat about.txt
-      </div>
+      <p class="section-eyebrow reveal">About</p>
+      <h2 class="section-title reveal">Background</h2>
 
-      <div class="about-block reveal">
-        <div class="file-header">
-          <span class="file-name">about.txt</span>
-          <span class="file-meta">UTF-8</span>
+      <div class="about-content reveal">
+        <p>
+          Software engineer and founder based in <span class="hl">San Diego, CA</span>. I build things
+          that work — full-stack platforms in Python and TypeScript, agentic AI systems using local LLMs
+          and open-source tools, and now a company of my own. My edge isn't just the stack I know —
+          it's how fast I pick up the ones I don't.
+        </p>
+        <p>
+          I think depth-first. <span class="hl">"It works"</span> is the floor, not the ceiling. I care
+          about why it works, how it breaks under load, and how to make it genuinely better. That mindset
+          carries into everything I ship — and everything I build a business around.
+        </p>
+        <p>
+          Currently founder of <span class="hl">AtoZFlow</span>, a platform helping small businesses
+          increase profitability by automating repetitive daily tasks and staying reachable to their
+          customers 24/7. Built for complexity — from distributed systems to real-time data pipelines.
+          Drawn to hard problems worth solving.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- VENTURES -->
+  <section id="ventures">
+    <div class="container">
+      <p class="section-eyebrow reveal">Ventures</p>
+      <h2 class="section-title reveal">What I'm building</h2>
+
+      <div class="venture-card reveal">
+        <div class="venture-main">
+          <div class="venture-head">
+            <h3 class="venture-name">AtoZFlow</h3>
+            <span class="venture-role">Founder</span>
+          </div>
+          <p class="venture-desc">
+            A platform that helps small businesses increase profitability by automating repetitive daily
+            tasks and providing 24/7 customer communication channels — so they can deliver excellent
+            service without adding headcount.
+          </p>
+          <div class="tag-row">
+            <span>React</span>
+            <span>TypeScript</span>
+            <span>Twilio</span>
+            <span>LLMs</span>
+            <span>AI Automation</span>
+          </div>
         </div>
-        <div class="file-content">
-          <p>
-            Software engineer and founder based in <span class="hl">San Diego, CA</span>. I build things that work —
-            full-stack platforms in Python and TypeScript,
-            agentic AI systems using local LLMs and open-source tools, and now a company of my own.
-            My edge isn't just the stack I know — it's how fast I pick up the ones I don't.
-          </p>
-          <p>
-            I think depth-first. <span class="hl-green">"It works"</span> is the floor, not the ceiling. I care about
-            why it works, how it breaks under load, and how to make it
-            genuinely better. That mindset carries into everything I ship — and everything I build a business around.
-          </p>
-          <p>
-            Currently founder of <span class="hl">AtoZFlow</span>, a platform helping small businesses
-            increase profitability by automating repetitive daily tasks and staying reachable to their
-            customers 24/7. Built for complexity — from distributed systems to real-time data pipelines.
-            Drawn to hard problems worth solving.
-          </p>
+        <div class="venture-side">
+          <span class="venture-year">2026 — present</span>
+          <a href="https://atozflow.com" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Visit atozflow.com</a>
         </div>
       </div>
     </div>
@@ -155,22 +133,20 @@
   <!-- PROJECTS -->
   <section id="projects">
     <div class="container">
-      <div class="section-label reveal">
-        <span class="prompt-full">elyas@eemami.dev</span><span class="prompt-sep">:</span><span class="prompt-dir">~/projects</span><span class="prompt-sym">$</span> ls -la
-      </div>
+      <p class="section-eyebrow reveal">Projects</p>
+      <h2 class="section-title reveal">Selected work</h2>
 
-      <div class="ls-output reveal">
-        <div class="ls-header">
-          <span>total 4</span>
-        </div>
-
-        <!-- RAG Search API -->
-        <a href="https://github.com/elyasemami" target="_blank" rel="noopener" class="ls-entry">
-          <span class="ls-perms">drwxr-xr-x</span>
-          <span class="ls-date">Mar 28</span>
-          <span class="ls-name dir">rag-search-api/</span>
-          <span class="ls-desc">Retrieval-augmented generation API. Ingests documents, chunks and embeds with OpenAI, serves semantic search over FastAPI. PostgreSQL + pgvector for storage.</span>
-          <div class="ls-tags">
+      <div class="project-grid">
+        <a href="https://github.com/elyasemami" target="_blank" rel="noopener" class="project-card reveal">
+          <div class="project-card-top">
+            <h3 class="project-name">rag-search-api</h3>
+            <span class="project-date">Mar 2026</span>
+          </div>
+          <p class="project-desc">
+            Retrieval-augmented generation API. Ingests documents, chunks and embeds with OpenAI, serves
+            semantic search over FastAPI. PostgreSQL + pgvector for storage.
+          </p>
+          <div class="tag-row">
             <span>Python</span>
             <span>FastAPI</span>
             <span>LangChain</span>
@@ -179,13 +155,16 @@
           </div>
         </a>
 
-        <!-- Task Automation Agent -->
-        <a href="https://github.com/elyasemami" target="_blank" rel="noopener" class="ls-entry">
-          <span class="ls-perms">drwxr-xr-x</span>
-          <span class="ls-date">Mar 05</span>
-          <span class="ls-name dir">task-agent/</span>
-          <span class="ls-desc">Agentic task automation system powered by local LLMs. Chains tool calls, manages state, and executes multi-step workflows via a REST interface.</span>
-          <div class="ls-tags">
+        <a href="https://github.com/elyasemami" target="_blank" rel="noopener" class="project-card reveal">
+          <div class="project-card-top">
+            <h3 class="project-name">task-agent</h3>
+            <span class="project-date">Mar 2026</span>
+          </div>
+          <p class="project-desc">
+            Agentic task automation system powered by local LLMs. Chains tool calls, manages state, and
+            executes multi-step workflows via a REST interface.
+          </p>
+          <div class="tag-row">
             <span>Python</span>
             <span>LLMs</span>
             <span>Agents</span>
@@ -194,13 +173,16 @@
           </div>
         </a>
 
-        <!-- chat-server-pro -->
-        <a href="https://github.com/elyasemami/chat-server-pro" target="_blank" rel="noopener" class="ls-entry">
-          <span class="ls-perms">drwxr-xr-x</span>
-          <span class="ls-date">Feb 20</span>
-          <span class="ls-name dir">chat-server-pro/</span>
-          <span class="ls-desc">Multi-client TCP chat server handling concurrent connections and real-time messaging. Thread-per-client architecture with graceful shutdown.</span>
-          <div class="ls-tags">
+        <a href="https://github.com/elyasemami/chat-server-pro" target="_blank" rel="noopener" class="project-card reveal">
+          <div class="project-card-top">
+            <h3 class="project-name">chat-server-pro</h3>
+            <span class="project-date">Feb 2026</span>
+          </div>
+          <p class="project-desc">
+            Multi-client TCP chat server handling concurrent connections and real-time messaging.
+            Thread-per-client architecture with graceful shutdown.
+          </p>
+          <div class="tag-row">
             <span>Java</span>
             <span>TCP/IP</span>
             <span>Concurrency</span>
@@ -208,61 +190,25 @@
           </div>
         </a>
 
-        <!-- notepadmacOS -->
-        <a href="https://github.com/elyasemami/notepadmacOS" target="_blank" rel="noopener" class="ls-entry">
-          <span class="ls-perms">drwxr-xr-x</span>
-          <span class="ls-date">Jan 20</span>
-          <span class="ls-name dir">notepadmacOS/</span>
-          <span class="ls-desc">Native macOS notepad recreating the Windows XP UI on modern macOS. Built with Objective-C++ and Cocoa frameworks.</span>
-          <div class="ls-tags">
+        <a href="https://github.com/elyasemami/notepadmacOS" target="_blank" rel="noopener" class="project-card reveal">
+          <div class="project-card-top">
+            <h3 class="project-name">notepadmacOS</h3>
+            <span class="project-date">Jan 2026</span>
+          </div>
+          <p class="project-desc">
+            Native macOS notepad recreating the Windows XP UI on modern macOS. Built with Objective-C++
+            and Cocoa frameworks.
+          </p>
+          <div class="tag-row">
             <span>Objective-C++</span>
             <span>macOS</span>
             <span>Cocoa</span>
           </div>
         </a>
-
       </div>
 
-      <div class="ls-footer reveal">
-        <span class="prompt-full">elyas@eemami.dev</span><span class="prompt-sep">:</span><span class="prompt-dir">~/projects</span><span class="prompt-sym">$</span>
-        <a href="https://github.com/elyasemami" target="_blank" rel="noopener" class="inline-link">→ view all on github</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- VENTURES -->
-  <section id="ventures">
-    <div class="container">
-      <div class="section-label reveal">
-        <span class="prompt-full">elyas@eemami.dev</span><span class="prompt-sep">:</span><span class="prompt-dir">~/ventures</span><span class="prompt-sym">$</span> ls -la
-      </div>
-
-      <div class="ls-output reveal">
-        <div class="ls-header">
-          <span>total 1</span>
-        </div>
-
-        <!-- AtoZFlow -->
-        <a href="https://atozflow.com" target="_blank" rel="noopener" class="ls-entry">
-          <span class="ls-perms">drwxr-xr-x</span>
-          <span class="ls-date">2026</span>
-          <span class="ls-name dir">atozflow/</span>
-          <span class="ls-desc">Founder. Platform helping small businesses increase profitability by automating repetitive daily tasks and providing 24/7 customer communication channels for excellent service.</span>
-          <div class="ls-tags">
-            <span>Founder</span>
-            <span>React</span>
-            <span>TypeScript</span>
-            <span>Twilio</span>
-            <span>LLMs</span>
-            <span>AI Automation</span>
-          </div>
-        </a>
-
-      </div>
-
-      <div class="ls-footer reveal">
-        <span class="prompt-full">elyas@eemami.dev</span><span class="prompt-sep">:</span><span class="prompt-dir">~/ventures</span><span class="prompt-sym">$</span>
-        <a href="https://atozflow.com" target="_blank" rel="noopener" class="inline-link">→ visit atozflow.com</a>
+      <div class="section-footer reveal">
+        <a href="https://github.com/elyasemami" target="_blank" rel="noopener" class="inline-link">View all on GitHub →</a>
       </div>
     </div>
   </section>
@@ -270,59 +216,39 @@
   <!-- SKILLS -->
   <section id="skills">
     <div class="container">
-      <div class="section-label reveal">
-        <span class="prompt-full">elyas@eemami.dev</span><span class="prompt-sep">:</span><span class="prompt-dir">~</span><span class="prompt-sym">$</span> cat skills.json | jq
-      </div>
+      <p class="section-eyebrow reveal">Skills</p>
+      <h2 class="section-title reveal">Toolbox</h2>
 
       <div class="skills-grid reveal">
-        <div class="skills-col">
-          <div class="skill-block">
-            <div class="skill-block-title">// languages</div>
-            <div class="skill-line">
-              <span class="sk-name">Python</span>
-              <span class="sk-bar" data-fill="12">░░░░░░░░░░░░</span>
-              <span class="sk-pct"></span>
-            </div>
-            <div class="skill-line">
-              <span class="sk-name">TypeScript</span>
-              <span class="sk-bar" data-fill="11">░░░░░░░░░░░░</span>
-              <span class="sk-pct"></span>
-            </div>
-            <div class="skill-line">
-              <span class="sk-name">Java</span>
-              <span class="sk-bar" data-fill="10">░░░░░░░░░░░░</span>
-              <span class="sk-pct"></span>
-            </div>
-            <div class="skill-line">
-              <span class="sk-name">JavaScript</span>
-              <span class="sk-bar" data-fill="9">░░░░░░░░░░░░</span>
-              <span class="sk-pct"></span>
-            </div>
+        <div class="skill-block">
+          <div class="skill-block-title">Languages</div>
+          <div class="tag-row">
+            <span>Python</span><span>TypeScript</span><span>Java</span><span>JavaScript</span>
           </div>
         </div>
 
-        <div class="skills-col">
-          <div class="skill-block">
-            <div class="skill-block-title">// frontend</div>
-            <div class="skill-tags-list">
-              <span>React</span><span>Next.js</span><span>TypeScript</span>
-              <span>Tailwind CSS</span><span>HTML5</span><span>CSS3</span>
-            </div>
+        <div class="skill-block">
+          <div class="skill-block-title">Frontend</div>
+          <div class="tag-row">
+            <span>React</span><span>Next.js</span><span>TypeScript</span>
+            <span>Tailwind CSS</span><span>HTML5</span><span>CSS3</span>
           </div>
-          <div class="skill-block">
-            <div class="skill-block-title">// backend & systems</div>
-            <div class="skill-tags-list">
-              <span>Python</span><span>FastAPI</span><span>Django</span>
-              <span>Node.js</span><span>REST APIs</span><span>GraphQL</span>
-              <span>PostgreSQL</span><span>Redis</span><span>Linux</span>
-            </div>
+        </div>
+
+        <div class="skill-block">
+          <div class="skill-block-title">Backend &amp; Systems</div>
+          <div class="tag-row">
+            <span>Python</span><span>FastAPI</span><span>Django</span>
+            <span>Node.js</span><span>REST APIs</span><span>GraphQL</span>
+            <span>PostgreSQL</span><span>Redis</span><span>Linux</span>
           </div>
-          <div class="skill-block">
-            <div class="skill-block-title">// devops & tooling</div>
-            <div class="skill-tags-list">
-              <span>Docker</span><span>Git</span><span>GitHub Actions</span>
-              <span>AWS</span><span>Nginx</span><span>Pytest</span>
-            </div>
+        </div>
+
+        <div class="skill-block">
+          <div class="skill-block-title">DevOps &amp; Tooling</div>
+          <div class="tag-row">
+            <span>Docker</span><span>Git</span><span>GitHub Actions</span>
+            <span>AWS</span><span>Nginx</span><span>Pytest</span>
           </div>
         </div>
       </div>
@@ -332,20 +258,16 @@
   <!-- EDUCATION -->
   <section id="education">
     <div class="container">
-      <div class="section-label reveal">
-        <span class="prompt-full">elyas@eemami.dev</span><span class="prompt-sep">:</span><span class="prompt-dir">~</span><span class="prompt-sym">$</span> cat education.md
-      </div>
+      <p class="section-eyebrow reveal">Education</p>
+      <h2 class="section-title reveal">Background</h2>
 
-      <div class="edu-block reveal">
-        <div class="edu-header">
-          <span class="edu-marker">#</span>
-          <span class="edu-school">University of California, San Diego</span>
+      <div class="edu-card reveal">
+        <div class="edu-head">
+          <h3 class="edu-school">University of California, San Diego</h3>
+          <span class="edu-location">San Diego, CA</span>
         </div>
-        <div class="edu-body">
-          <div class="edu-row"><span class="edu-key">Degree</span><span class="edu-val">BS in Mathematics & Computer Science</span></div>
-          <div class="edu-row"><span class="edu-key">Location</span><span class="edu-val">San Diego, CA</span></div>
-          <div class="edu-row"><span class="edu-key">Coursework</span><span class="edu-val">Software Engineering · Systems Programming · Data Structures · Machine Learning</span></div>
-        </div>
+        <p class="edu-degree">BS in Mathematics &amp; Computer Science</p>
+        <p class="edu-coursework">Software Engineering · Systems Programming · Data Structures · Machine Learning</p>
       </div>
     </div>
   </section>
@@ -353,53 +275,33 @@
   <!-- CONTACT -->
   <section id="contact">
     <div class="container">
-      <div class="section-label reveal">
-        <span class="prompt-full">elyas@eemami.dev</span><span class="prompt-sep">:</span><span class="prompt-dir">~</span><span class="prompt-sym">$</span> ./contact.sh
-      </div>
+      <p class="section-eyebrow reveal">Contact</p>
+      <h2 class="section-title reveal">Let's talk</h2>
+      <p class="contact-intro reveal">
+        Founder at AtoZFlow, building full-time in San Diego, CA. If you're building something real — let's talk.
+      </p>
 
-      <div class="contact-block reveal">
-        <div class="contact-text">
-          <div class="contact-line"><span class="dim">#</span> founder @ atozflow.com — building full-time in San Diego, CA</div>
-          <div class="contact-line"><span class="dim">#</span> if you're building something real — let's talk</div>
+      <div class="contact-grid reveal">
+        <a href="mailto:elyas@eemami.dev" class="contact-card">
+          <span class="contact-label">Email</span>
+          <span class="contact-value">elyas@eemami.dev</span>
+        </a>
+        <a href="https://atozflow.com" target="_blank" rel="noopener" class="contact-card">
+          <span class="contact-label">AtoZFlow</span>
+          <span class="contact-value">atozflow.com</span>
+        </a>
+        <a href="https://github.com/elyasemami" target="_blank" rel="noopener" class="contact-card">
+          <span class="contact-label">GitHub</span>
+          <span class="contact-value">github.com/elyasemami</span>
+        </a>
+        <a href="https://linkedin.com/in/elyasemami" target="_blank" rel="noopener" class="contact-card">
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">linkedin.com/in/elyasemami</span>
+        </a>
+        <div class="contact-card contact-card-static">
+          <span class="contact-label">Location</span>
+          <span class="contact-value">San Diego, CA · PDT (UTC-7)</span>
         </div>
-
-        <div class="contact-links-block">
-          <a href="mailto:elyas@eemami.dev" class="contact-entry">
-            <span class="ce-icon">✉</span>
-            <span class="ce-label">email</span>
-            <span class="ce-val">elyas@eemami.dev</span>
-            <span class="ce-arrow">→</span>
-          </a>
-          <a href="https://atozflow.com" target="_blank" rel="noopener" class="contact-entry">
-            <span class="ce-icon">▲</span>
-            <span class="ce-label">atozflow</span>
-            <span class="ce-val">atozflow.com</span>
-            <span class="ce-arrow">→</span>
-          </a>
-          <a href="https://github.com/elyasemami" target="_blank" rel="noopener" class="contact-entry">
-            <span class="ce-icon">⌥</span>
-            <span class="ce-label">github</span>
-            <span class="ce-val">github.com/elyasemami</span>
-            <span class="ce-arrow">→</span>
-          </a>
-          <a href="https://linkedin.com/in/elyasemami" target="_blank" rel="noopener" class="contact-entry">
-            <span class="ce-icon">◈</span>
-            <span class="ce-label">linkedin</span>
-            <span class="ce-val">linkedin.com/in/elyasemami</span>
-            <span class="ce-arrow">→</span>
-          </a>
-          <div class="contact-entry no-link">
-            <span class="ce-icon">◉</span>
-            <span class="ce-label">location</span>
-            <span class="ce-val">San Diego, CA · PDT (UTC-7)</span>
-            <span class="ce-arrow"></span>
-          </div>
-        </div>
-      </div>
-
-      <div class="contact-prompt reveal">
-        <span class="prompt-full">elyas@eemami.dev</span><span class="prompt-sep">:</span><span class="prompt-dir">~</span><span class="prompt-sym">$</span>
-        <span class="cursor-sm">█</span>
       </div>
     </div>
   </section>
@@ -411,9 +313,9 @@
         <span class="footer-copy">© 2026 Elyas Emami</span>
         <span class="footer-mid">You've seen the work. Let's talk about yours.</span>
         <div class="footer-links">
-          <a href="https://atozflow.com" target="_blank" rel="noopener">atozflow</a>
-          <a href="https://github.com/elyasemami" target="_blank" rel="noopener">github</a>
-          <a href="https://linkedin.com/in/elyasemami" target="_blank" rel="noopener">linkedin</a>
+          <a href="https://atozflow.com" target="_blank" rel="noopener">AtoZFlow</a>
+          <a href="https://github.com/elyasemami" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://linkedin.com/in/elyasemami" target="_blank" rel="noopener">LinkedIn</a>
         </div>
       </div>
     </div>
