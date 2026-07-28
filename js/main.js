@@ -57,6 +57,7 @@ const phrases = [
   'python3 main.py',
   'javac Main.java && java Main',
   'ssh deploy@eemami.dev',
+  'open https://atozflow.com',
 ];
 
 let phraseIdx = 0;

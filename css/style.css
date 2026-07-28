@@ -516,6 +516,7 @@ section + section { border-top: 1px solid var(--border); }
    PROJECTS
 ═══════════════════════════════════════════ */
 #projects { background: var(--bg); }
+#ventures { background: var(--bg); }
 
 .ls-output {
   border: 1px solid var(--border);
