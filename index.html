@@ -1,538 +1,408 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <script defer src="https://stats.eemami.dev/js/api_hooked_collector.js"></script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Elyas Emami — Software Engineer</title>
-    <meta
-      name="description"
-      content="Software engineer in San Diego, CA. Backend and full-stack systems in Python and TypeScript — REST APIs, data pipelines, and LLM-backed tooling. UCSD, BS Math–Computer Science. Open to software engineering roles."
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <!-- NAV -->
-    <nav id="navbar">
-      <div class="nav-inner">
-        <a href="#hero" class="nav-logo"
-          >E<span class="nav-logo-full">LYAS </span>E<span class="nav-logo-full"
-            >MAMI</span
-          ></a
-        >
-        <ul class="nav-links">
-          <li>
-            <a href="#about"><span class="nav-num"></span>About</a>
-          </li>
-          <li>
-            <a href="#ventures"><span class="nav-num"></span>Work</a>
-          </li>
-          <li>
-            <a href="#projects"><span class="nav-num"></span>Projects</a>
-          </li>
-          <li>
-            <a href="#skills"><span class="nav-num"></span>Skills</a>
-          </li>
-          <li>
-            <a href="#education"><span class="nav-num"></span>Education</a>
-          </li>
-        </ul>
-        <a href="#contact" class="nav-cta"
-          ><span class="bracket">[</span>Contact<span class="bracket"
-            >]</span
-          ></a
-        >
-        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </nav>
 
-    <!-- MOBILE MENU -->
-    <div class="mobile-menu" id="mobileMenu">
-      <ul>
+<head>
+  <script defer src="https://stats.eemami.dev/js/api_hooked_collector.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elyas Emami — Software Engineer</title>
+  <meta name="description"
+    content="Software engineer in San Diego, CA. Backend and full-stack systems in Python and TypeScript — REST APIs, data pipelines, and LLM-backed tooling. UCSD, BS Math–Computer Science. Open to software engineering roles." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <div class="venture-role">
+        <a href="#hero" class="nav-logo">E<span class="nav-logo-full">LYAS </span>E<span
+            class="nav-logo-full">MAMI</span></a>
+      </div>
+      <ul class="nav-links">
         <li>
-          <a href="#about" class="mobile-link"
-            ><span class="nav-num"></span>About</a
-          >
+          <a href="#about"><span class="nav-num"></span>About</a>
         </li>
         <li>
-          <a href="#ventures" class="mobile-link"
-            ><span class="nav-num"></span>Work</a
-          >
+          <a href="#ventures"><span class="nav-num"></span>Work</a>
         </li>
         <li>
-          <a href="#projects" class="mobile-link"
-            ><span class="nav-num"></span>Projects</a
-          >
+          <a href="#projects"><span class="nav-num"></span>Projects</a>
         </li>
         <li>
-          <a href="#skills" class="mobile-link"
-            ><span class="nav-num"></span>Skills</a
-          >
+          <a href="#skills"><span class="nav-num"></span>Skills</a>
         </li>
         <li>
-          <a href="#education" class="mobile-link"
-            ><span class="nav-num"></span>Education</a
-          >
-        </li>
-        <li>
-          <a href="#contact" class="mobile-link"
-            ><span class="nav-num"></span>Contact</a
-          >
+          <a href="#education"><span class="nav-num"></span>Education</a>
         </li>
       </ul>
+      <a href="#contact" class="nav-cta"><span class="bracket">[</span>Contact<span class="bracket">]</span></a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
+  </nav>
 
-    <!-- HERO -->
-    <section id="hero">
-      <div class="container hero-grid">
-        <div class="hero-main">
-          <p class="hero-eyebrow reveal">
-            Software Engineer — Backend &amp; Full-Stack
-          </p>
-          <h1 class="hero-title reveal">
-            Elyas<br />Emami<span class="hero-dot">.</span>
-          </h1>
-          <p class="hero-desc reveal">
-            Software engineer in San Diego, CA. I build backend and full-stack
-            systems in Node.js — REST APIs, data pipelines, and
-            LLM-backed tooling — including atozFlow (Under Development), a communication platform
-            for small businesses.
-          </p>
-          <div class="hero-actions reveal">
-            <a href="#projects" class="btn-fill">View my work</a>
-            <a href="#contact" class="btn-bracket"
-              ><span class="bracket">[</span>Get in touch<span class="bracket"
-                >]</span
-              ></a
-            >
-          </div>
-          <div class="hero-links reveal">
-             <a href="https://github.com/elyasemami"
-              target="_blank"
-              rel="noopener"> Github </a> 
-            <span class="hero-links-sep">/</span>
-            
-            <a href="https://linkedin.com/in/elyasemami"
-              target="_blank"
-              rel="noopener"
-              > LinkedIn 
-            </a>
-            <span class="hero-links-sep">/</span>
-            <a href="mailto:elyas@eemami.dev">Email</a>
-          </div>
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li>
+        <a href="#about" class="mobile-link"><span class="nav-num"></span>About</a>
+      </li>
+      <li>
+        <a href="#ventures" class="mobile-link"><span class="nav-num"></span>Work</a>
+      </li>
+      <li>
+        <a href="#projects" class="mobile-link"><span class="nav-num"></span>Projects</a>
+      </li>
+      <li>
+        <a href="#skills" class="mobile-link"><span class="nav-num"></span>Skills</a>
+      </li>
+      <li>
+        <a href="#education" class="mobile-link"><span class="nav-num"></span>Education</a>
+      </li>
+      <li>
+        <a href="#contact" class="mobile-link"><span class="nav-num"></span>Contact</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="container hero-grid">
+      <div class="hero-main">
+        <p class="hero-eyebrow reveal">
+          Software Engineer — Backend &amp; Full-Stack
+        </p>
+        <h1 class="hero-title reveal">
+          Elyas<br />Emami<span class="hero-dot">.</span>
+        </h1>
+        <p class="hero-desc reveal">
+          Software engineer in San Diego, CA. I build backend and full-stack
+          systems in Node.js — REST APIs, data pipelines, and
+          LLM-backed tooling — including atozFlow (Under Development), a communication platform
+          for small businesses.
+        </p>
+        <div class="hero-actions reveal">
+          <a href="#projects" class="btn-fill">View my work</a>
+          <a href="#contact" class="btn-bracket"><span class="bracket">[</span>Get in touch<span
+              class="bracket">]</span></a>
         </div>
+        <div class="hero-links reveal">
+          <a href="https://github.com/elyasemami" target="_blank" rel="noopener"> Github </a>
+          <span class="hero-links-sep">/</span>
 
-        <div class="hero-side reveal">
-          <!-- Swap the .avatar-mono span below for <img class="avatar-img" src="..." alt="Elyas Emami"> when a photo is ready -->
-          <div class="spec-sheet">
-            <div class="spec-row">
-              <span class="spec-key">Role</span
-              ><span class="spec-val">Software Engineer</span>
-            </div>
-            <div class="spec-row">
-              <span class="spec-key">Building</span
-              ><span class="spec-val"
-                ><a href="https://atozflow.com" target="_blank" rel="noopener"
-                  >atozFlow.com</a
-                ></span
-              >
-            </div>
-            <div class="spec-row">
-              <span class="spec-key">Location</span
-              ><span class="spec-val">San Diego, CA</span>
-            </div>
-            <div class="spec-row">
-              <span class="spec-key">Education</span
-              ><span class="spec-val">UCSD — Math &amp; CS, 2026</span>
-            </div>
+          <a href="https://linkedin.com/in/elyasemami" target="_blank" rel="noopener"> LinkedIn
+          </a>
+          <span class="hero-links-sep">/</span>
+          <a href="mailto:elyas@eemami.dev">Email</a>
+        </div>
+      </div>
+
+      <div class="hero-side reveal">
+        <!-- Swap the .avatar-mono span below for <img class="avatar-img" src="..." alt="Elyas Emami"> when a photo is ready -->
+        <div class="spec-sheet">
+          <div class="spec-row">
+            <span class="spec-key">Role</span><span class="spec-val">Software Engineer</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-key">Building</span><span class="spec-val"><a href="https://atozflow.com" target="_blank"
+                rel="noopener">atozFlow.com</a></span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-key">Location</span><span class="spec-val">San Diego, CA</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-key">Education</span><span class="spec-val">UCSD — Math &amp; CS, 2026</span>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ABOUT -->
-    <section id="about">
-      <div class="container">
-        <div class="section-head reveal">
-          <div>
-            <p class="section-eyebrow">About</p>
-            <h2 class="section-title">Background</h2>
-          </div>
-        </div>
-
-        <div class="about-grid">
-          <p class="about-pull reveal">
-            "Building" is my mission.
-          </p>
-          <div class="about-body reveal">
-            <p>
-              Software engineer based in San Diego, CA, focused on backend and
-              full-stack systems — the parts of an application that have to keep
-              working when traffic spikes, inputs are malformed, or a
-              third-party API goes down. I work mostly in JavaScript/TypeScript and 
-              Python.
-            </p>
-            <p>
-              I think depth-first. I care about why something works, how it
-              breaks under load, and scale it for billions. That
-              carries into the unglamorous parts of the job — input validation,
-              failure handling, compliance, the edge case nobody filed a ticket
-              for. Usually that's what separates a demo from something people
-              can rely on.
-            </p>
-            <p>
-              I came to engineering by an indirect route. I ran an e-commerce
-              business for three years — sourcing, inventory, fulfillment, and
-              customer support — and closed it in 2023 to study computer science
-              full-time at UCSD. Before that I spent a year tutoring Java, C++,
-              and data structures, which is where I learned that if you can't
-              explain it, you probably don't understand it
-              yet.
-            </p>
-          </div>
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <p class="section-eyebrow">About</p>
+          <h2 class="section-title">Background</h2>
         </div>
       </div>
-    </section>
 
-    <!-- VENTURES -->
-    <section id="ventures">
-      <div class="container">
-        <div class="section-head reveal">
-          <div>
-            <p class="section-eyebrow">Current Work</p>
-            <h2 class="section-title">What I'm building</h2>
+      <div class="about-grid">
+        <p class="about-pull reveal">
+          "Building" is my mission.
+        </p>
+        <div class="about-body reveal">
+          <p>
+            Software engineer based in San Diego, CA, focused on backend and
+            full-stack systems — the parts of an application that have to keep
+            working when traffic spikes, inputs are malformed, or a
+            third-party API goes down. I work mostly in JavaScript/TypeScript and
+            Python.
+          </p>
+          <p>
+            I think depth-first. I care about why something works, how it
+            breaks under load, and scale it for billions. That
+            carries into the unglamorous parts of the job — input validation,
+            failure handling, compliance, the edge case nobody filed a ticket
+            for. Usually that's what separates a demo from something people
+            can rely on.
+          </p>
+          <p>
+            I came to engineering by an indirect route. I ran an e-commerce
+            business for three years — sourcing, inventory, fulfillment, and
+            customer support — and closed it in 2023 to study computer science
+            full-time at UCSD. Before that I spent a year tutoring Java, C++,
+            and data structures, which is where I learned that if you can't
+            explain it, you probably don't understand it
+            yet.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VENTURES -->
+  <section id="ventures">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <p class="section-eyebrow">Current Work</p>
+          <h2 class="section-title">What I'm building</h2>
+        </div>
+      </div>
+
+      <div class="venture-card reveal">
+        <div class="venture-main">
+          <div class="venture-meta">
+            <span class="venture-role">Engineer</span>
+            <span class="venture-year">2026 — present</span>
+          </div>
+          <h3 class="venture-name">atozFlow.com</h3>
+          <p class="venture-desc">
+            A multi-tenant communication platform that consolidates SMS and
+            email into a single thread per contact for small businesses. The
+            interesting problems have been architectural: a consent and
+            revocation ledger that stays correct when opt-outs arrive through
+            any channel, and token-bucket rate limiting to bound burst traffic
+            and cap per-tenant API spend.
+          </p>
+          <div class="tag-row">
+            <span><span class="bracket">[</span>TypeScript<span class="bracket">]</span></span>
+            <span><span class="bracket">[</span>Node.js<span class="bracket">]</span></span>
+            <span><span class="bracket">[</span>React<span class="bracket">]</span></span>
+            <span><span class="bracket">[</span>PostgreSQL<span class="bracket">]</span></span>
+            <span><span class="bracket">[</span>Twilio<span class="bracket">]</span></span>
+            <span><span class="bracket">[</span>Docker<span class="bracket">]</span></span>
           </div>
         </div>
+        <div href="https://atozflow.com" target="_blank" rel="noopener" class="btn-fill venture-cta">Visit
+          atozFlow.com</a>
+        </div>
+      </div>
+  </section>
 
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="project-body">
+      <div class="container">
         <div class="venture-card reveal">
           <div class="venture-main">
             <div class="venture-meta">
-              <span class="venture-role">Engineer</span>
-              <span class="venture-year">2026 — present</span>
+              <h3 class="venture-name">Analytic Collector</h3>
+              <span class="venture-year">Jul 2025 · Live on this site</span>
             </div>
-            <h3 class="venture-name">atozFlow.com</h3>
             <p class="venture-desc">
-              A multi-tenant communication platform that consolidates SMS and
-              email into a single thread per contact for small businesses. The
-              interesting problems have been architectural: a consent and
-              revocation ledger that stays correct when opt-outs arrive through
-              any channel, and token-bucket rate limiting to bound burst traffic
-              and cap per-tenant API spend.
+              Full-stack analytics pipeline running in production on
+              eemami.dev. Collects, validates, and anonymizes client-side
+              events, with an event schema designed to absorb asynchronous
+              bursts without dropping data and identifying fields stripped
+              before persistence. It runs behind NGINX and hosted locally at
+              my old macbook, which added extra fun while building. Backend is
+              completely separate from Front-End which is hosted on Cloudflare
+              For more in depth implementation details view it on github.
             </p>
             <div class="tag-row">
-              <span
-                ><span class="bracket">[</span>TypeScript<span class="bracket"
-                  >]</span
-                ></span
-              >
-              <span
-                ><span class="bracket">[</span>Node.js<span class="bracket"
-                  >]</span
-                ></span
-              >
-              <span
-                ><span class="bracket">[</span>React<span class="bracket"
-                  >]</span
-                ></span
-              >
-              <span
-                ><span class="bracket">[</span>PostgreSQL<span class="bracket"
-                  >]</span
-                ></span
-              >
-              <span
-                ><span class="bracket">[</span>Twilio<span class="bracket"
-                  >]</span
-                ></span
-              >
-              <span
-                ><span class="bracket">[</span>Docker<span class="bracket"
-                  >]</span
-                ></span
-              >
+              <span><span class="bracket">[</span>Node.js<span class="bracket">]</span></span>
+              <span><span class="bracket">[</span>Express<span class="bracket">]</span></span>
+              <span><span class="bracket">[</span>PostgreSQL<span class="bracket">]</span></span>
+              <span><span class="bracket">[</span>JavaScript<span class="bracket">]</span></span>
+              <span><span class="bracket">[</span>ZingChart<span class="bracket">]</span></span>
+              <span><span class="bracket">[</span>Dbmate<span class="bracket">]</span></span>
+              <span><span class="bracket">[</span>NGINX<span class="bracket">]</span></span>
             </div>
           </div>
-          <div
-            href="https://atozflow.com"
-            target="_blank"
-            rel="noopener"
-            class="btn-fill venture-cta"
-            >Visit atozFlow.com</a
-          >
-        </div>
-      </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects">
-      <div class="container">
-        <div class="section-head reveal">
-          <div>
-            <p class="section-eyebrow">Projects</p>
-            <h2 class="section-title">Full Stack Web Projects</h2>
-          </div>
-        </div>
-          <a  href="https://github.com/elyasemami/devboard"
-            target="_blank"
-            rel="noopener"
-            class="project-row reveal"
-          > 
-            <div class="project-body">
-              <div class="project-row-top">
-                <h3 class="project-name">devboard</h3>
-                <span class="project-date">present</span>
-              </div>
-              <p class="project-desc">
-               Devboard will be launched soon!.
-               You can manage agentic flows and deliver.
-               It is still under development and soon you will be able to use it.
-              </p>
-              <div class="tag-row">
-                <span
-                  ><span class="bracket">[</span>Node.js<span class="bracket"
-                    >]</span
-                  ></span
-                >
-                <span
-                  ><span class="bracket">[</span>React<span class="bracket"
-                    >]</span
-                  ></span
-                >
-                <span
-                  ><span class="bracket">[</span>PostgresSQL<span
-                    class="bracket"
-                    >]</span
-                  ></span
-                >
-              </div>
-            </div>
+          <a href="https://stats.eemami.dev">
+            <div target="_blank" rel="noopener" class="btn-fill venture-cta">Visit
+              Live
           </a>
-          <a href="https://github.com/elyasemami/analyticcollector"
-            target="_blank"
-            rel="noopener"
-            class="project-row reveal"
-            >
-            <div class="project-body">
-              <div class="project-row-top">
-                <h3 class="project-name">Analytic Collector</h3>
-                <span class="project-date">Jul 2025 · Live on this site</span>
-              </div>
-              <p class="project-desc">
-                Full-stack analytics pipeline running in production on
-                eemami.dev. Collects, validates, and anonymizes client-side
-                events, with an event schema designed to absorb asynchronous
-                bursts without dropping data and identifying fields stripped
-                before persistence. It runs behind NGINX and hosted locally at
-                my old macbook, which added extra fun while building. Backend is
-                completely separate from Front-End which is hosted on Cloudflare
-                For more in depth implementation details view it on github.
-              </p>
-              <div class="tag-row">
-                <span
-                  ><span class="bracket">[</span>Node.js<span class="bracket"
-                    >]</span
-                  ></span
-                >
-                <span
-                  ><span class="bracket">[</span>Express<span class="bracket"
-                    >]</span
-                  ></span
-                >
-                <span
-                  ><span class="bracket">[</span>PostgreSQL<span class="bracket"
-                    >]</span
-                  ></span
-                >
-                <span
-                  ><span class="bracket">[</span>JavaScript<span class="bracket"
-                    >]</span
-                  ></span
-                >
-                <span
-                  ><span class="bracket">[</span>ZingChart<span class="bracket"
-                    >]</span
-                  ></span>
-                <span><span class="bracket">[</span>Dbmate<span class="bracket">]</span></span>
-              </div>
+        </div>
+      </div>
+  </section>
+
+  <section id="projects">
+    <div class="project-body">
+      <div class="container">
+        <div class="venture-card reveal">
+          <div class="venture-main">
+            <div class="venture-meta">
+              <h3 class="venture-name">DevBoard</h3>
+              <span class="venture-year">Under Development</span>
             </div>
-            <div><a href="https://stats.eemami.dev" class="btn-fill">Live Analytic Page</a></div>
+            <p class="venture-desc">
+              Devboard will be availbale soon! A web application which Devs
+              can manage project as well as using mcp to authorize and guide
+              SMLs or LLMs to enhance and beter manage software development
+              process.
+            </p>
+            <div class="tag-row">
+              <span><span class="bracket">[</span>Node.js<span class="bracket">]</span></span>
+              <span><span class="bracket">[</span>Express<span class="bracket">]</span></span>
+              <span><span class="bracket">[</span>PostgreSQL<span class="bracket">]</span></span>
+              <span><span class="bracket">[</span>JavaScript/TypeScript<span class="bracket">]</span></span>
+              <span><span class="bracket">[</span>Docker<span class="bracket">]</span></span>
+              <span><span class="bracket">[</span>Auth0<span class="bracket">]</span></span>
+            </div>
+          </div>
+          <a href="https://github.com/elyasemami/devboard">
+            <div target="_blank" rel="noopener" class="btn-fill venture-cta">Visit
+              Github
+          </a>
         </div>
       </div>
-    </section>
+  </section>
 
-    <!-- SKILLS -->
-    <section id="skills">
-      <div class="container">
-        <div class="section-head reveal">
-          <div>
-            <p class="section-eyebrow">Skills</p>
-            <h2 class="section-title">Toolbox</h2>
-          </div>
-        </div>
-
-        <div class="spec-table reveal">
-          <div class="spec-table-row">
-            <span class="spec-table-key">Languages</span>
-            <span class="spec-table-val"
-              >Python · TypeScript · JavaScript · Java · C/C++ · SQL</span
-            >
-          </div>
-          <div class="spec-table-row">
-            <span class="spec-table-key">Frontend</span>
-            <span class="spec-table-val"
-              >React · TypeScript · Tailwind CSS · HTML5 · CSS3</span
-            >
-          </div>
-          <div class="spec-table-row">
-            <span class="spec-table-key">Backend &amp; Systems</span>
-            <span class="spec-table-val"
-              >FastAPI · Node.js · Express · REST API design · PostgreSQL ·
-              MongoDB · Redis · Linux</span
-            >
-          </div>
-          <div class="spec-table-row">
-            <span class="spec-table-key">DevOps &amp; Tooling</span>
-            <span class="spec-table-val"
-              >Docker · Git · GitHub Actions · Nginx · AWS · Pytest</span
-            >
-          </div>
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <p class="section-eyebrow">Skills</p>
+          <h2 class="section-title">Toolbox</h2>
         </div>
       </div>
-    </section>
 
-    <!-- EDUCATION -->
-    <section id="education">
-      <div class="container">
-        <div class="section-head reveal">
-          <div>
-            <p class="section-eyebrow">Education</p>
-            <h2 class="section-title">Background</h2>
-          </div>
+      <div class="spec-table reveal">
+        <div class="spec-table-row">
+          <span class="spec-table-key">Languages</span>
+          <span class="spec-table-val">Python · TypeScript · JavaScript · Java · C/C++ · SQL</span>
         </div>
-
-        <div class="edu-card reveal">
-          <div class="edu-meta">
-            <span class="venture-role">BS — Math &amp; CS, 2026</span>
-            <span class="venture-year">San Diego, CA</span>
-          </div>
-          <h3 class="edu-school">University of California, San Diego</h3>
-          <p class="edu-coursework">
-            Data Structures &amp; Algorithms · Advanced Data Structures ·
-            Software Engineering · Database Systems · Machine Learning
-          </p>
+        <div class="spec-table-row">
+          <span class="spec-table-key">Frontend</span>
+          <span class="spec-table-val">React · TypeScript/JavaScript · CSS · HTML5 · CSS3</span>
+        </div>
+        <div class="spec-table-row">
+          <span class="spec-table-key">Backend &amp; Systems</span>
+          <span class="spec-table-val">FastAPI · Node.js · Express · REST API design · PostgreSQL ·
+            MongoDB · Linux</span>
+        </div>
+        <div class="spec-table-row">
+          <span class="spec-table-key">DevOps &amp; Tooling</span>
+          <span class="spec-table-val">Docker · Git · GitHub Actions · Nginx · AWS · Pytest</span>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- CONTACT -->
-    <section id="contact">
-      <div class="container">
-        <div class="section-head reveal">
-          <div>
-            <p class="section-eyebrow">Contact</p>
-            <h2 class="section-title">Let's talk</h2>
-          </div>
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <p class="section-eyebrow">Education</p>
+          <h2 class="section-title">Background</h2>
         </div>
+      </div>
 
-        <p class="contact-intro reveal">
-          Based in San Diego, CA and open to software engineering roles —
-          backend, full-stack, or infrastructure. If you're hiring, or want to
-          talk through something you're building, my inbox is open.
+      <div class="edu-card reveal">
+        <div class="edu-meta">
+          <span class="venture-role">BS — Math &amp; CS, 2026</span>
+          <span class="venture-year">San Diego, CA</span>
+        </div>
+        <h3 class="edu-school">University of California, San Diego</h3>
+        <p class="edu-coursework">
+          Data Structures &amp; Algorithms · Advanced Data Structures ·
+          Software Engineering · Database Systems · Machine Learning
         </p>
+      </div>
+    </div>
+  </section>
 
-        <div class="spec-table reveal">
-          <a href="mailto:elyas@eemami.dev" class="spec-table-row">
-            <span class="spec-table-key">Email</span>
-            <span class="spec-table-val"
-              >elyas@eemami.dev<span class="row-arrow">→</span></span
-            >
-          </a>
-          
-            <a href="https://github.com/elyasemami"
-            target="_blank"
-            rel="noopener"
-            class="spec-table-row"
-          >
-            <span class="spec-table-key">GitHub</span>
-            <span class="spec-table-val"
-              >github.com/elyasemami<span class="row-arrow">→</span></span
-            >
-          </a>
-          
-            <a href="https://linkedin.com/in/elyasemami"
-            target="_blank"
-            rel="noopener"
-            class="spec-table-row"
-            >
-            <span class="spec-table-key">LinkedIn</span>
-            <span class="spec-table-val"
-            >linkedin.com/in/elyasemami<span class="row-arrow">→</span></span
-            >
-          </a>
-          
-            <a href="https://atozflow.com"
-            target="_blank"
-            rel="noopener"
-            class="spec-table-row"
-          >
-            <span class="spec-table-key">atozFlow.com</span>
-            <span class="spec-table-val"
-              >atozFlow.com<span class="row-arrow">→</span></span
-            >
-          </a>
-          <div class="spec-table-row">
-            <span class="spec-table-key">Availability</span>
-            <span class="spec-table-val"
-              >Open to software engineering roles</span
-            >
-          </div>
-          <div class="spec-table-row">
-            <span class="spec-table-key">Location</span>
-            <span class="spec-table-val">San Diego, CA · PDT (UTC-7)</span>
-          </div>
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <p class="section-eyebrow">Contact</p>
+          <h2 class="section-title">Let's talk</h2>
         </div>
       </div>
-    </section>
 
-    <!-- FOOTER -->
-    <footer>
-      <div class="container">
-        <div class="footer-inner">
-          <span class="footer-copy">EE © 2026</span>
-          <span class="footer-mid"
-            >You've seen the work. Let's talk about yours.</span
-          >
-          <div class="footer-links">
-            <a href="https://atozflow.com" target="_blank" rel="noopener"
-              >atozFlow.com</a
-            >
-            
-              <a href="https://github.com/elyasemami"
-              target="_blank"
-              rel="noopener"
-              >GitHub</a
-            >
-            
-              <a href="https://linkedin.com/in/elyasemami"
-              target="_blank"
-              rel="noopener"
-              >LinkedIn</a
-            >
-          </div>
+      <p class="contact-intro reveal">
+        Based in San Diego, CA and open to software engineering roles —
+        backend, full-stack, or infrastructure. If you're hiring, or want to
+        talk through something you're building, my inbox is open.
+      </p>
+
+      <div class="spec-table reveal">
+        <a href="mailto:elyas@eemami.dev" class="spec-table-row">
+          <span class="spec-table-key">Email</span>
+          <span class="spec-table-val">elyas@eemami.dev<span class="row-arrow">→</span></span>
+        </a>
+
+        <a href="https://github.com/elyasemami" target="_blank" rel="noopener" class="spec-table-row">
+          <span class="spec-table-key">GitHub</span>
+          <span class="spec-table-val">github.com/elyasemami<span class="row-arrow">→</span></span>
+        </a>
+
+        <a href="https://linkedin.com/in/elyasemami" target="_blank" rel="noopener" class="spec-table-row">
+          <span class="spec-table-key">LinkedIn</span>
+          <span class="spec-table-val">linkedin.com/in/elyasemami<span class="row-arrow">→</span></span>
+        </a>
+
+        <a href="https://atozflow.com" target="_blank" rel="noopener" class="spec-table-row">
+          <span class="spec-table-key">atozFlow.com</span>
+          <span class="spec-table-val">atozFlow.com<span class="row-arrow">→</span></span>
+        </a>
+        <div class="spec-table-row">
+          <span class="spec-table-key">Availability</span>
+          <span class="spec-table-val">Open to software engineering roles</span>
+        </div>
+        <div class="spec-table-row">
+          <span class="spec-table-key">Location</span>
+          <span class="spec-table-val">San Diego, CA · PDT (UTC-7)</span>
         </div>
       </div>
-    </footer>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-copy">EE © 2026</span>
+        <span class="footer-mid">You've seen the work. Let's talk about yours.</span>
+        <div class="footer-links">
+          <a href="https://atozflow.com" target="_blank" rel="noopener">atozFlow.com</a>
+
+          <a href="https://github.com/elyasemami" target="_blank" rel="noopener">GitHub</a>
+
+          <a href="https://linkedin.com/in/elyasemami" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 
 
-    <script src="js/main.js"></script>
-  </body>
+  <script src="js/main.js"></script>
+</body>
+
 </html>
